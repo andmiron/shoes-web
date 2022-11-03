@@ -1,0 +1,303 @@
+/*  */
+/* BELOW 1366px (smaller desktops)*/
+/*  */
+
+/* 1344px */
+@media (max-width: 84em) {
+  .container-heading {
+    max-width: 105rem;
+  }
+
+  .container-content {
+    max-width: 100rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container-heading {
+    max-width: 100rem;
+  }
+
+  .nav-list {
+    gap: 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* 944px */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container-heading,
+  .container-content {
+    max-width: 100%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 4.8rem;
+  }
+
+  .testimonials-section {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-btn {
+    margin-top: 1.2rem;
+  }
+
+  .pricing-plan {
+    width: 75%;
+  }
+
+  /* MOBILE */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 100;
+  }
+
+  .main-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 1s ease-in;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    color: #333;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-link-nav:link,
+  .main-link-nav:visited {
+    font-weight: 500;
+    font-size: 3rem;
+  }
+
+  .nav-open ul .main-link-nav:link,
+  .nav-open ul .main-link-nav:visited {
+    color: #333;
+  }
+
+  .logo-text:link {
+    color: white;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+}
+
+/* 704px */
+@media (max-width: 44em) {
+  .heading--spacing {
+    padding: 1.4rem 2.4rem;
+  }
+
+  .shoes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brands-container {
+    grid-column: 1/-1;
+  }
+
+  .grid-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-price:link,
+  .btn-price:visited {
+    font-size: 1.4rem;
+  }
+
+  .section-pricing {
+    padding: 4rem;
+  }
+
+  .grid-how-it-works {
+    row-gap: 3.2rem;
+    column-gap: 1.4rem;
+  }
+
+  .grid-pricing {
+    justify-items: center;
+  }
+
+  .pricing-plan--starter {
+    justify-self: center;
+  }
+
+  .testimonials-section {
+    padding: 3.2rem 2.4rem;
+  }
+
+  .testimonials-container {
+    padding: 4rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 6.4rem;
+    column-gap: 2.4rem;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+
+/* 544px */
+@media (max-width: 44em) {
+  .grid-how-it-works,
+  .shoes-grid,
+  .grid-pricing {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .heading--spacing {
+    padding: 9.6rem 2.4rem;
+  }
+
+  .header {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .grid-features {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .shoes {
+    width: 75%;
+    justify-self: center;
+  }
+
+  .testimonials-section {
+    padding-top: 6.4rem;
+  }
+
+  .section-pricing {
+    padding: 0;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .pricing-plan--complete {
+    grid-row: 1;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
